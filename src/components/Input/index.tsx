@@ -8,7 +8,6 @@ import React, {
 import { IconBaseProps } from 'react-icons';
 import { FiAlertCircle } from 'react-icons/fi';
 import { useField } from '@unform/core';
-
 import { Container, Error } from './styles';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -50,7 +49,7 @@ const Input: React.FC<InputProps> = ({ name, icon: Icon, ...rest }) => {
         defaultValue={defaultValue}
         ref={inputRef}
         {...rest}
-        type="text"
+        // type="text"
       />
       {error && (
         <Error title={error}>
