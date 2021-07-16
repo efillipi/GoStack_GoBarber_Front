@@ -3,7 +3,7 @@ import React, {
   useEffect,
   useRef,
   useState,
-  useCallback
+  useCallback,
 } from 'react';
 import { IconBaseProps } from 'react-icons';
 import { FiAlertCircle } from 'react-icons/fi';
@@ -36,7 +36,7 @@ const Input: React.FC<InputProps> = ({ name, icon: Icon, ...rest }) => {
     registerField({
       name: fieldName,
       ref: inputRef.current,
-      path: 'value'
+      path: 'value',
     });
   }, [fieldName, registerField]);
 
